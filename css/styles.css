@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap");
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%; }
+
+#searchInput-text, #searchInput-date, #searchInput-select, #searchInput-btn, .villasSection-villa-info-details button, .details-container-options-btn {
+  border: none;
+  outline: none; }
+
+.testimonies-testimonie {
+  border-radius: 20px;
+  box-shadow: 11px 11px 27px #969696, -11px -11px 27px #ffffff; }
+
+.carousel-item .carouselTitle, .advertising-title, .imgGallery-card-title, .banner-title {
+  letter-spacing: .25em; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 56.67%; } }
+
+@media (max-width: 576px) {
+  html {
+    font-size: 50%; } }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.header {
+  height: 20vh;
+  width: 100%;
+  top: 0;
+  display: grid;
+  grid-template-columns: minmax(10rem, 1fr) repeat(7, minmax(min-content, 16rem)) minmax(10rem, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  z-index: 100;
+  position: fixed;
+  background-color: white;
+  opacity: .95; }
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 20vh; }
+
+.logo {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2; }
+  .logo-img {
+    width: 10rem;
+    height: 100%; }
+
+.nav {
+  grid-column: 6 / -1;
+  grid-row: 1 / 2;
+  justify-content: flex-end; }
+  .nav a {
+    color: gray;
+    border-right: 1px solid gray;
+    padding-left: calc(1em - 1px);
+    padding-right: calc(1em - 1px); }
+  .nav a:last-of-type {
+    border-right: none; }
+  .nav a:hover {
+    color: #9B824C; }
+
+@media screen and (max-width: 460px) {
+  .nav {
+    grid-column: 5 / -1; } }
+
+#searchInput {
+  grid-column: 1 / -1;
+  grid-row: 2 / -1;
+  z-index: 101;
+  width: 100%;
+  display: flex;
+  background-image: linear-gradient(to right, rgba(201, 9, 201, 0.236), #CCE6F5); }
+  #searchInput-text, #searchInput-date, #searchInput-select, #searchInput-btn {
+    background-color: transparent;
+    color: black; }
+  #searchInput-text {
+    flex-basis: 45%;
+    padding-left: 1em; }
+  #searchInput-text::placeholder {
+    color: black; }
+  #searchInput-date, #searchInput-select {
+    flex-basis: 20%; }
+  #searchInput-select option {
+    color: black; }
+  #searchInput-btn {
+    flex-basis: 15%;
+    background-color: #9B824C;
+    color: white;
+    transition: all .2s ease-in-out; }
+  #searchInput-btn:hover {
+    background-color: #92773d; }
+
+.carousel-item {
+  height: 80vh !important; }
+  .carousel-item img {
+    height: 100vh !important;
+    object-fit: cover;
+    filter: brightness(80%); }
+
+.advertising {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 6em;
+  padding-top: 2em;
+  background-color: white; }
+  .advertising-title {
+    text-align: center;
+    margin: 2em; }
+  .advertising-adds {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2em; }
+    .advertising-adds-add {
+      width: 35vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 2em; }
+      .advertising-adds-add .fa-solid {
+        font-size: 3em;
+        color: #9B824C;
+        flex-basis: 10%; }
+      .advertising-adds-add-desc {
+        flex-basis: 90%; }
+      .advertising-adds-add-desc > h3 {
+        font-size: 1.4em; }
+      .advertising-adds-add-desc > span {
+        font-size: .9em;
+        color: gray; }
+
+@media screen and (max-width: 460px) {
+  .advertising-adds {
+    grid-template-columns: repeat(1, 1fr); }
+    .advertising-adds-add {
+      width: 65vw; } }
+
+.imgGallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  background-color: #D7DEF5;
+  min-height: 50vh;
+  cursor: pointer;
+  padding-top: 1em;
+  padding-bottom: 1em; }
+  .imgGallery-card:nth-child(1) {
+    width: 20vw;
+    height: 20vw;
+    background-image: url("https://www.homeinitaly.com/_cache/img_mgr/img/destination-large-villas-ok_512x512_im_r7_h0_v0_t1_c000-000-000-255_q58.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%; }
+  .imgGallery-card:nth-child(2) {
+    width: 20vw;
+    height: 20vw;
+    background-image: url("https://www.homeinitaly.com/_cache/img_mgr/img/destination-traditional-villas-ok_512x512_im_r7_h0_v0_t1_c000-000-000-255_q58.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%; }
+  .imgGallery-card:nth-child(3) {
+    width: 20vw;
+    height: 20vw;
+    background-image: url("https://www.homeinitaly.com/_cache/img_mgr/img/destination-top-luxury-ok_512x512_im_r7_h0_v0_t1_c000-000-000-255_q58.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%; }
+  .imgGallery-card:nth-child(4) {
+    width: 20vw;
+    height: 20vw;
+    background-image: url("https://www.homeinitaly.com/_cache/img_mgr/img/destination-best-villas_512x512_im_r7_h0_v0_t1_c000-000-000-255_q58.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%; }
+  .imgGallery-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .imgGallery-card:hover {
+    transition: .2s all ease-in-out;
+    scale: 1.05; }
+  .imgGallery-card-title {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.33);
+    color: white; }
+
+@media screen and (max-width: 460px) {
+  .imgGallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .imgGallery-card {
+      width: 35vw !important;
+      height: 35vw !important; } }
+
+.testimonies {
+  padding: 3em;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em; }
+  .testimonies-testimonies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em; }
+  .testimonies-testimonie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 30vw;
+    height: fit-content;
+    padding: 2em; }
+    .testimonies-testimonie-text {
+      font-style: italic; }
+    .testimonies-testimonie-details {
+      font-size: 14px;
+      text-align: center; }
+  .testimonies .fa-star {
+    color: #9B824C; }
+
+@media screen and (max-width: 765px) {
+  .testimonies-testimonie-details {
+    font-size: 1.4em; } }
+
+@media screen and (max-width: 460px) {
+  .testimonies-testimonies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .testimonies-testimonie {
+    width: 40vw; }
+    .testimonies-testimonie-details {
+      font-size: 1.1em; } }
+
+.banner {
+  height: 80vh;
+  background-image: url("https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/search/feature-large-villas_1920x800_im_r7_h0_v0_t1_c000-000-000-255_q70.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center; }
+  .banner-title {
+    font-weight: 300; }
+  .banner-subtitle {
+    font-weight: 300; }
+
+.villasSection {
+  background-color: white;
+  height: fit-content;
+  padding: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em; }
+
+.villasSection-villa {
+  width: fit-content;
+  height: 45vh;
+  background-color: #D7DEF5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .villasSection-villa-imgs {
+    position: relative;
+    height: 45vh !important;
+    flex-basis: 45%; }
+    .villasSection-villa-imgs img {
+      height: 45vh !important;
+      object-fit: cover;
+      filter: brightness(100%); }
+    .villasSection-villa-imgs .fa-heart {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.507);
+      color: #9B824C;
+      border-radius: 100%;
+      padding: .7em;
+      font-size: 1.2em;
+      top: 1em;
+      right: 1em;
+      z-index: 2; }
+    .villasSection-villa-imgs .fa-heart:hover {
+      background-color: white;
+      cursor: pointer;
+      transition: all .1s ease-in-out; }
+  .villasSection-villa-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-basis: 55%;
+    padding: 2em; }
+    .villasSection-villa-info-content-title {
+      margin-top: .4em;
+      margin-bottom: .4em; }
+    .villasSection-villa-info-content-location {
+      font-size: 12px;
+      margin-bottom: .4em; }
+    .villasSection-villa-info-content-description {
+      font-size: 14px; }
+    .villasSection-villa-info-details {
+      width: 100%;
+      border-top: 1px solid gray;
+      padding-top: 1em;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center; }
+      .villasSection-villa-info-details button {
+        background-color: #9B824C;
+        color: white;
+        transition: all .2s ease-in-out;
+        padding: .3em; }
+      .villasSection-villa-info-details button:hover {
+        background-color: #92773d; }
+  .villasSection-villa .fa-star {
+    color: #9B824C;
+    font-size: 13px; }
+
+@media screen and (max-width: 460px) {
+  .villasSection-villa {
+    height: 35vh; }
+    .villasSection-villa-imgs {
+      position: relative;
+      height: 35vh !important;
+      flex-basis: 50%; }
+      .villasSection-villa-imgs img {
+        height: 35vh !important;
+        object-fit: cover;
+        filter: brightness(100%); }
+    .villasSection-villa-info {
+      line-height: 1em;
+      flex-basis: 50%; }
+      .villasSection-villa-info-content-location {
+        font-size: 1em; }
+      .villasSection-villa-info-content-description {
+        font-size: 1em; }
+  .fa-star {
+    font-size: 5px !important; } }
+
+.details-container {
+  background-color: white;
+  height: fit-content;
+  padding: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em; }
+  .details-container-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1em; }
+    .details-container-info-main {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 2em;
+      background-color: #D7DEF5;
+      padding: 1em; }
+    .details-container-info-description {
+      padding: 0 1em 1em 1em; }
+    .details-container-info-amenities {
+      background-color: #D7DEF5; }
+      .details-container-info-amenities .list-group-item {
+        background-color: #D7DEF5; }
+  .details-container-options {
+    background-color: #D7DEF5;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em; }
+    .details-container-options-btn {
+      background-color: #9B824C;
+      color: white;
+      transition: all .2s ease-in-out;
+      padding: .3em;
+      min-width: 15vw; }
+    .details-container-options-btn:hover {
+      background-color: #92773d; }
+    .details-container-options-phone {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: .8em; }
+      .details-container-options-phone-number {
+        color: #9B824C; }
+      .details-container-options-phone-number:hover {
+        scale: 1.1;
+        cursor: pointer;
+        transition: all .2s ease-in-out; }
+  .details-container .fa-star {
+    color: #9B824C; }
+
+.breadcrum {
+  margin-bottom: 2em; }
+  .breadcrum-link:hover {
+    color: #92773d !important; }
+  .breadcrum .active {
+    color: #9B824C; }
+
+#footer {
+  background-color: #D7DEF5; }
+  #footer .text-reset:hover {
+    color: black !important;
+    transition: all .2s ease-in-out; }

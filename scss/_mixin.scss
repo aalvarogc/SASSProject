@@ -1,0 +1,109 @@
+/// Mixin para cambiar el contenido de un elemento según el breakpoint
+/// @example
+/// html{
+///    @include response(md){
+///         font-size: 56.67%;
+///   }
+/// }
+/// @param {string} $breakpoint - Nombre del breakpoint
+
+@mixin response($breakpoint){
+    @if($breakpoint == xl){
+        @media(max-width: 1200px){
+            @content;
+        }
+    }
+
+    @if($breakpoint == lg){
+        @media(max-width: 992px){
+            @content;
+        }
+    }
+
+    @if($breakpoint == md){
+        @media(max-width: 768px){
+            @content;
+        }
+    }
+
+    @if($breakpoint == sm){
+        @media(max-width: 576px){
+            @content;
+        }
+    }
+}
+
+/// Placeholder para el nav
+/// @example
+/// .nav{
+///     @extend %nav;
+/// }
+%nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+/// Placeholder para quitar bordes y outlines
+/// @example
+/// .card{
+///     @extend %inputsNoneBorder;
+/// }
+%inputsNoneBorder{
+    border: none;
+    outline: none;
+}
+
+/// Placeholder para cards redondeados y con sombra
+/// @example
+/// .card{
+///     @extend %cardShadow;
+/// }
+%cardShadow{
+    border-radius: 20px;
+    box-shadow:  11px 11px 27px #969696,
+             -11px -11px 27px #ffffff;
+}
+
+/// Placeholder para poner espaciado entre letras en los subtítulos
+/// @example
+/// .h3{
+///     @extend %subtitlesLetterSpacing;
+/// }
+%subtitlesLetterSpacing{
+    letter-spacing: .25em;
+}
+
+/// Mixin de posicionamiento con flexbox
+/// @example
+/// .footer{
+///     @include flexposition(row, space-around);
+/// }
+/// @parameter {string} $direction [row] -valor para direction
+/// @parameter {string} $justifycontent [center] -valor para justify-content
+/// @parameter {string} $alignitem [center] -valor para align-items
+
+@mixin flexposition($direction:row, $justifycontent:center, $alignitem:center){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifycontent;
+    align-items: $alignitem;
+}
+
+/// Mixin para poner una imagen de fondo en un div
+/// @example
+/// .card{
+///     @include bgImg("./img/imagen.png");
+/// }
+/// @parameter {string} $img --valor para direction
+/// @parameter {string} $position [center] -valor para background-position
+/// @parameter {string} $repeat [no-repeat] -valor para background-repeat
+/// @parameter {string} $size [cover] -valor para background-size
+
+@mixin bgImg($img, $position: center, $repeat: no-repeat, $size: cover){
+    background-image: url($img);
+    background-position: $position;
+    background-repeat: $repeat;
+    background-size: $size;
+}

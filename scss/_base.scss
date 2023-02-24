@@ -1,0 +1,36 @@
+/// Fuentes importadas de Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+/// Valores iniciales para toda la página
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/// Valores iniciales para HTML
+html{
+    @include response(md){
+        font-size: 56.67%;
+    }
+
+    @include response(sm){
+        font-size: 50%;
+    }
+}
+
+/// Valores iniciales para el body
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/// Fuente inicial para las etiquetas h-n
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/// Enlaces sin subrayado
+a{
+    text-decoration: none;
+}

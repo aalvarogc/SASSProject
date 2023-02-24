@@ -1,0 +1,44 @@
+/// Componente imgGallery
+.imgGallery{
+    @include flexposition();
+    gap: 2em;
+    background-color: color(azulClaro);
+    min-height: 50vh;
+    cursor: pointer;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    // Loop para establecer imágenes de fondo de un array
+    @for $i from 1 through 4 {
+        &-card:nth-child(#{$i}) {
+            width: 20vw;
+            height: 20vw;
+            @include bgImg(backgroundImg($i));
+            border-radius: 100%;
+        }
+    }
+    &-card{
+        @include flexposition();
+    }
+    &-card:hover{
+        transition: .2s all ease-in-out;
+        scale: 1.05;
+    }
+    &-card-title{
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: bold;
+        @extend %subtitlesLetterSpacing;
+        background-color: rgba(0, 0, 0, 0.33);
+        color: color(blanco);
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .imgGallery{
+        @include flexposition(column);
+        &-card{
+            width: 35vw !important;
+            height: 35vw !important;
+        }
+    }
+}

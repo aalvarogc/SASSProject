@@ -1,0 +1,45 @@
+/// Componente testimonies
+.testimonies{
+    padding: 3em;
+    background-color: color("blanco");
+    @include flexposition(column);
+    gap: 2em;
+    &-testimonies{
+        @include flexposition();
+        gap: 2em;
+    }
+    &-testimonie{
+        @include flexposition(column);
+        gap: 1em;
+        width: 30vw;
+        height: fit-content;
+        padding: 2em;
+        @extend %cardShadow;
+        &-text{
+            font-style: italic;
+        }
+        &-details{
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+    .fa-star {
+        color: color("dorado");
+    }
+}
+@media screen and (max-width: 765px) {
+    .testimonies-testimonie-details{
+        font-size: 1.4em;
+    }
+}
+@media screen and (max-width: 460px) {
+    .testimonies-testimonies{
+        @include flexposition(column);
+    }
+    .testimonies-testimonie{
+        width: 40vw;
+        &-details{
+            font-size: 1.1em;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+/// Componente banner
+.banner{
+    height: 80vh;
+    @include bgImg("https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/search/feature-large-villas_1920x800_im_r7_h0_v0_t1_c000-000-000-255_q70.jpg");
+    @include flexposition(column);
+    color: color(blanco);
+    text-align: center;
+    &-title{
+        @extend %subtitlesLetterSpacing;
+        font-weight: 300;
+    }
+    &-subtitle{
+        font-weight: 300;
+    }
+}

@@ -1,0 +1,8 @@
+/// Componente villasSection
+.villasSection{
+    background-color: color("blanco");
+    height: fit-content;
+    padding: 4em;
+    @include flexposition(column);
+    gap: 1em;
+}

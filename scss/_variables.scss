@@ -1,0 +1,41 @@
+/// Proyecto: Buking.com
+/// @author Álvaro García Campos
+
+/// Mapa de colores
+/// @group colores
+$colores:(
+    "negro": black,
+    "blanco": white,
+    "gris": gray,
+    "rojo": #e91b0c,
+    "azul": #1D6DDD,
+    "dorado": #9B824C,
+    "doradoOscuro": #92773d,
+    "azulClaro" : #D7DEF5
+);
+
+/// Función que devuelve un color del vector $colores
+/// @group colores
+/// @param {string} $color - nombre del color del vector $colores
+/// @return {color} - color en hexadecimal
+@function color($color){
+    @return map-get($colores, $color)
+};
+
+/// Mapa de imágenes
+/// @group imagenes
+$imgsGallery: (
+    1: "https://www.homeinitaly.com/_cache/img_mgr/img/destination-large-villas-ok_512x512_im_r7_h0_v0_t1_c000-000-000-255_q58.avif",
+    2: "https://www.homeinitaly.com/_cache/img_mgr/img/destination-traditional-villas-ok_512x512_im_r7_h0_v0_t1_c000-000-000-255_q58.avif",
+    3: "https://www.homeinitaly.com/_cache/img_mgr/img/destination-top-luxury-ok_512x512_im_r7_h0_v0_t1_c000-000-000-255_q58.avif",
+    4: "https://www.homeinitaly.com/_cache/img_mgr/img/destination-best-villas_512x512_im_r7_h0_v0_t1_c000-000-000-255_q58.avif"
+);
+
+/// Función que devuelve un color del vector $colores
+/// @group imagenes
+/// @param {string} $img - nombre de la imagen del vector $imagenes
+/// @return {Imagen} - imagen
+
+@function backgroundImg($img){
+    @return map-get($imgsGallery, $img)
+}

@@ -1,0 +1,47 @@
+/// Componente advertising
+.advertising{
+    @include flexposition(column);
+    padding-bottom: 6em;
+    padding-top: 2em;
+    background-color: color("blanco");
+    &-title{
+        text-align: center;
+        margin: 2em;
+        @extend %subtitlesLetterSpacing;
+    }
+    &-adds{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 2em;
+        &-add{
+            width: 35vw;
+            @include flexposition(row, flex-start);
+            gap: 2em;
+            .fa-solid{
+                font-size: 3em;
+                color: color("dorado");
+                flex-basis: 10%;
+            }
+            &-desc{
+                flex-basis: 90%;
+            }
+            &-desc > h3{
+                font-size: 1.4em;
+            }
+            &-desc > span{
+                font-size: .9em;
+                color: color("gris");
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .advertising-adds{
+        grid-template-columns: repeat(1, 1fr);
+        &-add{
+            width: 65vw;
+        }
+    }
+}

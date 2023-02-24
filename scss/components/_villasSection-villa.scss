@@ -1,0 +1,102 @@
+/// Componente villasSection-villa
+.villasSection-villa{
+    width: fit-content;
+    height: 45vh;
+    background-color: color(azulClaro);
+    @include flexposition();
+    &-imgs{
+        position: relative;
+        height: 45vh !important;
+        flex-basis: 45%;
+        img{
+            height: 45vh !important;
+            object-fit: cover;
+            filter: brightness(100%);
+        }
+        .fa-heart{
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.507);
+            color: color(dorado);
+            border-radius: 100%;
+            padding: .7em;
+            font-size: 1.2em;
+            top: 1em;
+            right: 1em;
+            z-index: 2;
+        }
+        .fa-heart:hover{
+            background-color: color(blanco);
+            cursor: pointer;
+            transition: all .1s ease-in-out;
+        }
+    }
+    &-info{
+        height: 100%;
+        @include flexposition(column, space-between, flex-start);
+        flex-basis: 55%;
+        padding: 2em;
+        &-content{
+            &-title{
+                margin-top: .4em;
+                margin-bottom: .4em;
+            }
+            &-location{
+                font-size: 12px;
+                margin-bottom: .4em;
+            }
+            &-description{
+                font-size: 14px;
+            }
+        }
+        &-details {
+            width: 100%;
+            border-top: 1px solid color(gris);
+            padding-top: 1em;
+            @include flexposition(row, flex-end);
+            button{
+                @extend %inputsNoneBorder;
+                background-color: color("dorado");
+                color: color("blanco");
+                transition: all .2s ease-in-out;
+                padding: .3em;
+            }
+            button:hover{
+                background-color: color("doradoOscuro");
+            }
+        }
+    }
+    .fa-star {
+        color: color("dorado");
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .villasSection-villa{
+        height: 35vh;
+        &-imgs{
+            position: relative;
+            height: 35vh !important;
+            flex-basis: 50%;
+            img{
+                height: 35vh !important;
+                object-fit: cover;
+                filter: brightness(100%);
+            }
+        }
+        &-info{
+            line-height: 1em;
+            flex-basis: 50%;
+            &-content{
+                &-location{
+                    font-size: 1em;
+                }
+                &-description{
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+    .fa-star{
+        font-size: 5px !important;
+    }
+}

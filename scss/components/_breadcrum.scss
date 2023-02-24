@@ -1,0 +1,10 @@
+/// Componente breadcrum
+.breadcrum{
+    margin-bottom: 2em;
+    &-link:hover{
+        color: color(doradoOscuro) !important;
+    }
+    .active{
+        color: color(dorado);
+    }
+}

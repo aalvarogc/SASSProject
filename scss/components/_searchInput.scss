@@ -1,0 +1,36 @@
+/// Componente searchInput
+#searchInput{
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    z-index: 101;
+    width: 100%;
+    display: flex;
+    background-image: linear-gradient(to right, rgba(201, 9, 201, 0.236) , #CCE6F5);
+    &-text,&-date, &-select,&-btn{
+        @extend %inputsNoneBorder;
+        background-color: transparent;
+        color: color("negro");
+    }
+    &-text{
+        flex-basis: 45%;
+        padding-left: 1em;
+    }
+    &-text::placeholder{
+        color: color("negro")
+    }
+    &-date, &-select{
+        flex-basis: 20%;
+    }
+    &-select option{
+        color: color("negro");
+    }
+    &-btn{
+        flex-basis: 15%;
+        background-color: color("dorado");
+        color: color("blanco");
+        transition: all .2s ease-in-out;
+    }
+    &-btn:hover{
+        background-color: color("doradoOscuro");
+    }
+}

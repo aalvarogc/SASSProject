@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buking.com</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/0c06a27afa.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.min.css">
+
+    <!-- JS -->
+    <script src="js/index.js"></script>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="./img/logo.png" alt="Logo" class="img-fluid"></a>
+        </div>
+
+        <nav class="nav">
+            <a href="#villas">VILLAS</a>
+            <a href="#testimonies">TESTIMONIES</a>
+            <a href="#footer">INFO</a>
+            <a href="#footer">CONTACT</a>
+        </nav>
+
+         <!-- SEARCH INPUT -->
+         <div id="searchInput">
+            <input type="text" id="searchInput-text" placeholder="🔍︎ What are you looking for?">
+            <input type="date" name="" id="searchInput-date">
+            <select class="form-select" id="searchInput-select" aria-label="Default select example">
+                <option selected>🛏 Bedrooms</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <button id="searchInput-btn">SEARCH</button>
+        </div>
+        <!-- END SEARCH INPUT -->
+    </header>
+    <!-- END HEADER -->
+
+    <!-- MAIN -->
+    <main class="main">
+        <!-- CAROUSEL -->
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+                <li data-target="#myCarousel" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></li>
+                <li data-target="#myCarousel" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></li>
+            </ol>
+            <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+                <img src="https://www.homeinitaly.com/_cache/img_mgr/img/banner_home_01_1920x1080_im_r7_h0_v0_t1_c000-000-000-255_q58.avif" class="d-block w-100" alt="HOME IN ITALY">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="carouselTitle">HOME IN ITALY</h3>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="https://www.homeinitaly.com/_cache/img_mgr/img/banner_home_02_1920x1080_im_r7_h0_v0_t1_c000-000-000-255_q58.avif" class="d-block w-100" alt="ENJOY THE VERY BEST OF ITALY">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="carouselTitle">ENJOY THE VERY BEST OF ITALY</h3>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="https://www.homeinitaly.com/_cache/img_mgr/img/banner_home_03_1920x1080_im_r7_h0_v0_t1_c000-000-000-255_q58.avif" class="d-block w-100" alt="YOUR HOME IN ITALY AWAY FROM HOME">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="carouselTitle">YOUR HOME IN ITALY AWAY FROM HOME</h3>
+                </div>
+            </div>
+            </div>
+            <a class="carousel-control-prev" data-bs-target="#carousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" data-bs-target="#carousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+        <!-- END CAROUSEL -->
+
+        <!-- ADVERTISING -->
+        <section class="advertising">
+            <h2 class="advertising-title">LUXURY VILLAS & VACATION RENTALS IN ITALY</h2>
+            <div class="advertising-adds">
+                <div class="advertising-adds-add">
+                    <i class="fa-solid fa-trophy"></i>
+                    <div class="advertising-adds-add-desc">
+                        <h3>30 YEARS OF EXPERIENCE</h3>
+                        <span>we personally inspect the finest villas for rent in Italy</span>
+                    </div>
+                </div>
+                <div class="advertising-adds-add">
+                    <i class="fa-solid fa-landmark"></i>
+                    <div class="advertising-adds-add-desc">
+                        <h3>OUTSTANDING SERVICE</h3>
+                        <span>we can custom-design your vacation with our first class concierge team</span>
+                    </div>
+                </div>
+                <div class="advertising-adds-add" id="villas">
+                    <i class="fa-solid fa-pizza-slice"></i>
+                    <div class="advertising-adds-add-desc">
+                        <h3>BASED IN ITALY</h3>
+                        <span>your best expert of every region for your luxury holiday villa stay in Italy </span>
+                    </div>
+                </div>
+                <div class="advertising-adds-add">
+                    <i class="fa-solid fa-tag"></i>
+                    <div class="advertising-adds-add-desc">
+                        <h3>SPECIAL OFFERS</h3>
+                        <span>discover our latest deals for the best luxury villa rentals in Italy!</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END ADVERTISING -->
+
+        <!-- IMAGE GALLERY -->
+        <section class="imgGallery" id="villas">
+            <a href="./largeVillas.html">
+                <div class="imgGallery-card"> 
+                    <h3 class="imgGallery-card-title">LARGE VILLAS</h3>
+                </div>
+            </a>
+            <div class="imgGallery-card"> 
+                <h3 class="imgGallery-card-title">TRADICIONAL VILLAS</h3>
+            </div>
+            <div class="imgGallery-card"> 
+                <h3 class="imgGallery-card-title">TOP LUXURY VILLAS</h3>
+            </div>
+            <div class="imgGallery-card">
+                <h3 class="imgGallery-card-title">BEST VILLAS</h3>
+            </div>
+        </section>
+        <!-- END IMAGE GALLERY -->        
+
+        <!-- TESTIMONIES -->
+        <section class="testimonies" id="testimonies">
+            <h2 class="testimonies-title">CLIENTS TESTIMONIES</h2>
+            <div class="testimonies-testimonies">
+                <div class="testimonies-testimonie">
+                    <div class="testimonies-testimonie-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonies-testimonie-text">
+                        Lucrezia helped me plan a once-in-a-lifetime trip for my family and group of friends. The suggestions for activities, restaurants, sightseeing, etc. were absolutely perfect for our group. The level of service exceeded expectations; We will use Home in Italy and request Lucrezia for every future trip we take to Italy. Again, we can’t thank you enough. We truly had the best time!!
+                    </div>
+                    <div class="testimonies-testimonie-details">
+                        Rachel B. (USA) - castello nettuno - April 2022
+                    </div>
+                </div>
+                <div class="testimonies-testimonie">
+                    <div class="testimonies-testimonie-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonies-testimonie-text">
+                        Our stay was a big success. We really enjoyed every moment. The service has been very professional and they have answered all requests quickly and thoroughly. After we arrived to the villa you were in contact with me via phone, just to ask if everything was ok. I will give you my best review to everybody I meet and are interested in villas in Italy.
+                    </div>
+                    <div class="testimonies-testimonie-details">
+                        Bjorn K. (Iceland) - le rose - August 2022
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END TESTIMONIES -->
+    </main>
+    <!-- END MAIN -->
+
+    <!-- FOOTER -->
+    <footer class="text-center text-lg-start text-muted footer" id="footer">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center p-4" id="socialNetworks">
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+        
+            <a href="" class="me-4 link-secondary">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+                <i class="fa-brands fa-google"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/alvaro-garcia-campos/" class="me-4 link-secondary">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/aalvarogc" class="me-4 link-secondary">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </section>
+        <!-- Section: Social media -->
+    
+        <!-- Section: Links  -->
+        <section>
+        <div class="container text-center text-md-start  border-top border-secondary">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fa-solid fa-gem me-3 text-secondary"></i>Buking.com
+                    </h6>
+                    <p>
+                        Our mission is to select Italy’s finest private residences for holiday rental to our discerning clients.
+                        Our strength is to provide the most attentive service together with the rentals.
+                        Treat yourself to the very best of Italian luxury, and enjoy the unique experience!
+                    </p>
+                </div>
+        
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Find out more
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset text-decoration-none">About Us</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset text-decoration-none">Booking conditions & forms</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset text-decoration-none">Policies and Privacy</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset text-decoration-none">Special offers & last minute</a>
+                    </p>
+                </div>
+        
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fa-solid fa-house me-3 text-secondary"></i> Spain, Granada</p>
+                    <p>
+                    <i class="fa-solid fa-envelope me-3 text-secondary"></i>
+                    buking@buking.com
+                    </p>
+                    <p><i class="fa-solid fa-phone me-3 text-secondary"></i> + 958 32 32 32</p>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Section: Links  -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+        © Álvaro García Campos - 2023
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- END FOOTER -->
+</body>
+</html>

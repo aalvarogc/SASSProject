@@ -1,0 +1,59 @@
+/// Componente details-container
+.details-container{
+    background-color: color("blanco");
+    height: fit-content;
+    padding: 4em;
+    @include flexposition(column);
+    gap: 1em;
+    &-info{
+        @include flexposition(column, flex-start, flex-start);
+        gap: 1em;
+        &-main{
+            @include flexposition();
+            gap: 2em;
+            background-color: color(azulClaro);
+            padding: 1em;
+        }
+        &-description{
+            padding: 0 1em 1em 1em;
+        }
+        &-amenities{
+            background-color: color(azulClaro);
+            .list-group-item{
+                background-color: color(azulClaro);
+            }
+        }
+    }
+    &-options{
+        background-color: color(azulClaro);
+        padding: 3em;
+        @include flexposition(column);
+        gap: 2em;
+        &-btn{
+            @extend %inputsNoneBorder;
+            background-color: color("dorado");
+            color: color("blanco");
+            transition: all .2s ease-in-out;
+            padding: .3em;
+            min-width: 15vw;
+        }
+        &-btn:hover{
+            background-color: color("doradoOscuro");
+        }
+        &-phone{
+            @include flexposition(column);
+            gap: .8em;
+            &-number{
+                color: color(dorado);
+            }
+            &-number:hover{
+                scale: 1.1;
+                cursor: pointer;
+                transition: all .2s ease-in-out;
+            }
+        }
+    }
+    .fa-star {
+        color: color("dorado");
+    }
+}

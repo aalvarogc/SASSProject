@@ -1,0 +1,25 @@
+/// Componente nav
+.nav{
+    grid-column: 6 / -1;
+    grid-row: 1 / 2;
+    justify-content: flex-end;
+    @extend %nav;
+
+    a{
+        color: color("gris");
+        border-right: 1px solid color("gris");
+        padding-left: calc(1em - 1px);
+        padding-right: calc(1em - 1px);
+    }
+    a:last-of-type{
+        border-right: none;
+    }
+    a:hover{
+        color: color(dorado);
+    }
+}
+@media screen and (max-width: 460px) {
+    .nav{
+        grid-column: 5 / -1;
+    }
+}

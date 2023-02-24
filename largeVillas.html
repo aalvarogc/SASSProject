@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Large Villes</title>
+
+     <!-- FAVICON -->
+     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+
+     <!-- FONT AWESOME -->
+     <script src="https://kit.fontawesome.com/0c06a27afa.js" crossorigin="anonymous"></script>
+ 
+     <!-- Bootstrap core CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styles.css">
+
+     <!-- JS -->
+    <script src="js/index.js"></script>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="./img/logo.png" alt="Logo" class="img-fluid"></a>
+        </div>
+
+        <nav class="nav">
+            <a href="index.html#villas">VILLAS</a>
+            <a href="index.html#testimonies">TESTIMONIES</a>
+            <a href="#footer">INFO</a>
+            <a href="#footer">CONTACT</a>
+        </nav>
+
+         <!-- SEARCH INPUT -->
+         <div id="searchInput">
+            <input type="text" id="searchInput-text" placeholder="🔍︎ What are you looking for?">
+            <input type="date" name="" id="searchInput-date">
+            <select class="form-select" id="searchInput-select" aria-label="Default select example">
+                <option selected>🛏 Bedrooms</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <button id="searchInput-btn">SEARCH</button>
+        </div>
+        <!-- END SEARCH INPUT -->
+    </header>
+    <!-- END HEADER -->
+
+    <!-- MAIN -->
+    <main class="main">
+        <!-- BANNER -->
+        <section class="banner">
+            <h1 class="banner-title">LARGE VILLAS</h1>
+            <h4 class="banner-subtitle">the perfect villas for family gatherings or reunions with friends, toast each other's health and happiness in style!</h4>
+        </section>
+        <!-- END BANNER -->
+
+        <!-- VILLAS LIST -->
+        <section class="villasSection">
+            <nav class="breadcrum">
+                <span><a class="breadcrum-link text-dark" href="index.html">Home</a> &gt; <a class="breadcrum-link active" href="largeVillas.html">Large Villes</a></span>
+            </nav>
+            <div class="villasSection-villa">
+                <div id="carousel" class="carousel slide villasSection-villa-imgs">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/villas/879/abaco-luxury-villas-porto-cervo-1_768x480_im_r7_h0_v0_t1_c000-000-000-255_q50.avif" class="d-block w-100" alt="ville carousel image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/villas/879/abaco-luxury-villas-porto-cervo-2_768x480_im_r7_h0_v0_t1_c000-000-000-255_q50.avif" class="d-block w-100" alt="carousel image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/villas/879/abaco-luxury-villas-porto-cervo-5_768x480_im_r7_h0_v0_t1_c000-000-000-255_q50.avif" class="d-block w-100" alt="carousel image">
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" data-bs-target="#carousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" data-bs-target="#carousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="villasSection-villa-info">
+                    <div class="villasSection-villa-info-content">
+                        <div class="villasSection-villa-info-content-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="villasSection-villa-info-content-title">
+                            <h5>ABACO</h5>
+                        </div>
+                        <div class="villasSection-villa-info-content-location">
+                            <span><i class="fa-solid fa-location-dot"></i> SARDINIA, PORTO CERVO</span>
+                        </div>
+                        <div class="villasSection-villa-info-content-price">
+                            <h6>8000 € / week</h6>
+                        </div>
+                        <div class="villasSection-villa-info-content-description">
+                            <span>Set in the iconic location of Porto Cervo, this luxury private villa in Sardinia is one of the ultimate estates available for weekly rentals when it comes to a glamorous Italian vacation. Abaco is a real modern architectural gem, boasting particular design features such as the harmonious fusion ...</span>
+                        </div>
+                    </div>
+                    <div class="villasSection-villa-info-details">
+                        <a href="details.html"><button>DETAILS</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="villasSection-villa">
+                <div id="carousel2" class="carousel slide villasSection-villa-imgs">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/villas/878/adelchi-luxury-villas-porto-cervo-_768x480_im_r7_h0_v0_t1_c000-000-000-255_q50.avif" class="d-block w-100" alt="carousel image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/villas/878/adelchi-luxury-villas-porto-cervo-9_768x480_im_r7_h0_v0_t1_c000-000-000-255_q50.avif" class="d-block w-100" alt="carousel image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/villas/878/adelchi-luxury-villas-porto-cervo-9_768x480_im_r7_h0_v0_t1_c000-000-000-255_q50.avif" class="d-block w-100" alt="carousel image">
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" data-bs-target="#carousel2" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" data-bs-target="#carousel2" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="villasSection-villa-info">
+                    <div class="villasSection-villa-info-content">
+                        <div class="villasSection-villa-info-content-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="villasSection-villa-info-content-title">
+                            <h5>ADELCHI</h5>
+                        </div>
+                        <div class="villasSection-villa-info-content-location">
+                            <span><i class="fa-solid fa-location-dot"></i> SARDINIA, PORTO CERVO</span>
+                        </div>
+                        <div class="villasSection-villa-info-content-price">
+                            <h6>8900 € / week</h6>
+                        </div>
+                        <div class="villasSection-villa-info-content-description">
+                            <span>Located in the exclusive location of Porto Cervo, this 6-bedroom luxury villa in Sardinia is available for weekly rentals to make your Italian dream vacation come true. Just a ten-minute car drive away from iconic Sardinian beaches, this glamourous estate is enhanced by contemporary décor and ...</span>
+                        </div>
+                    </div>
+                    <div class="villasSection-villa-info-details">
+                        <a href="details.html"><button>DETAILS</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="villasSection-villa">
+                <div id="carousel3" class="carousel slide villasSection-villa-imgs">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/villas/556/alla-fattoria-large-family-wedding-villa-spa-todi-umbria-rental-heated-pool-umbria-16_768x480_im_r7_h0_v0_t1_c000-000-000-255_q50.avif" class="d-block w-100" alt="carousel image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/villas/556/alla-fattoria-large-family-wedding-villa-spa-todi-umbria-rental-heated-pool-umbria-45_768x480_im_r7_h0_v0_t1_c000-000-000-255_q50.avif" class="d-block w-100" alt="carousel image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/villas/556/alla-fattoria-large-family-wedding-villa-spa-todi-umbria-rental-heated-pool-umbria-47_768x480_im_r7_h0_v0_t1_c000-000-000-255_q50.avif" class="d-block w-100" alt="carousel image">
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" data-bs-target="#carousel3" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" data-bs-target="#carousel3" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="villasSection-villa-info">
+                    <div class="villasSection-villa-info-content">
+                        <div class="villasSection-villa-info-content-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="villasSection-villa-info-content-title">
+                            <h5>ALLA FATTORIA</h5>
+                        </div>
+                        <div class="villasSection-villa-info-content-location">
+                            <span><i class="fa-solid fa-location-dot"></i> UMBRIA, TODI</span>
+                        </div>
+                        <div class="villasSection-villa-info-content-price">
+                            <h6>8750 - 21000 € / week</h6>
+                        </div>
+                        <div class="villasSection-villa-info-content-description">
+                            <span>At the end of a cypress avenue protected by the woods, the ‘curtain’ of the Umbrian hills opens, a real postcard image that surrounds Alla Fattoria, including its guest houses. This very large family villa is near Todi, at walking distance to Doglio (two kilometres distance), an ancient ...</span>
+                        </div>
+                    </div>
+                    <div class="villasSection-villa-info-details">
+                        <a href="details.html"><button>DETAILS</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="villasSection-villa">
+                <div id="carousel4" class="carousel slide villasSection-villa-imgs">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/villas/673/aquila-reale-luxury-villa-rental-como-lake-39_768x480_im_r7_h0_v0_t1_c000-000-000-255_q50.avif" class="d-block w-100" alt="carousel image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/villas/673/aquila-reale-luxury-villa-rental-como-lake-1_768x480_im_r7_h0_v0_t1_c000-000-000-255_q50.avif" class="d-block w-100" alt="carousel image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/villas/673/aquila-reale-luxury-villa-rental-como-lake-5_768x480_im_r7_h0_v0_t1_c000-000-000-255_q50.avif" class="d-block w-100" alt="carousel image">
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" data-bs-target="#carousel4" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" data-bs-target="#carousel4" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="villasSection-villa-info">
+                    <div class="villasSection-villa-info-content">
+                        <div class="villasSection-villa-info-content-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="villasSection-villa-info-content-title">
+                            <h5>AQUILA REALE</h5>
+                        </div>
+                        <div class="villasSection-villa-info-content-location">
+                            <span><i class="fa-solid fa-location-dot"></i> LAKE COMO, PIGRA</span>
+                        </div>
+                        <div class="villasSection-villa-info-content-price">
+                            <h6>45000 - 84400 € / week</h6>
+                        </div>
+                        <div class="villasSection-villa-info-content-description">
+                            <span>With a commanding view over Lake Como, Aquila Reale is a modern five-star family vacation villa for rent architecturally designed with interiors that follow a formula that combines practical comfort, luxury, and high-drama visual impact. The villa, dating back to the early 20th century is ...</span>
+                        </div>
+                    </div>
+                    <div class="villasSection-villa-info-details">
+                        <a href="details.html"><button>DETAILS</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END VILLAS LIST -->
+    </main>
+    <!-- END MAIN -->
+    
+    <!-- FOOTER -->
+    <footer class="text-center text-lg-start text-muted footer" id="footer">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center p-4" id="socialNetworks">
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+        
+            <a href="" class="me-4 link-secondary">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+                <i class="fa-brands fa-google"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/alvaro-garcia-campos/" class="me-4 link-secondary">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/aalvarogc" class="me-4 link-secondary">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </section>
+        <!-- Section: Social media -->
+    
+        <!-- Section: Links  -->
+        <section>
+        <div class="container text-center text-md-start  border-top border-secondary">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-gem me-3 text-secondary"></i>Buking.com
+                    </h6>
+                    <p>
+                        Our mission is to select Italy’s finest private residences for holiday rental to our discerning clients.
+                        Our strength is to provide the most attentive service together with the rentals.
+                        Treat yourself to the very best of Italian luxury, and enjoy the unique experience!
+                    </p>
+                </div>
+        
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Find out more
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset text-decoration-none">About Us</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset text-decoration-none">Booking conditions & forms</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset text-decoration-none">Policies and Privacy</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset text-decoration-none">Special offers & last minute</a>
+                    </p>
+                </div>
+        
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3 text-secondary"></i> Spain, Granada</p>
+                    <p>
+                    <i class="fas fa-envelope me-3 text-secondary"></i>
+                    buking@buking.com
+                    </p>
+                    <p><i class="fas fa-phone me-3 text-secondary"></i> + 958 32 32 32</p>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Section: Links  -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+        © Álvaro García Campos - 2023
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- END FOOTER -->
+</body>
+</html>

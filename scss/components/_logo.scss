@@ -1,0 +1,9 @@
+/// Componente logo
+.logo{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    &-img{
+        width: 10rem;
+        height: 100%;
+    }
+}
